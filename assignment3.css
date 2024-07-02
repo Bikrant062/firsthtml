@@ -1,0 +1,42 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: left; /* Align h1 to the left */
+}
+
+h2 {
+    text-align: left; /* Align h2 to the left */
+}
+
+p {
+    line-height: 1.6;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #333;
+    margin: 20px 0;
+}
+
+/* Style for step descriptions */
+.step {
+    font-weight: bold;
+}
+
+/* Style for images */
+img {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%; /* Ensure images don't exceed their container width */
+    height: auto; /* Maintain aspect ratio */
+    border: 2px solid #333;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-height: 300px; /* Set maximum height to limit image size */
+}
