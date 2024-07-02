@@ -1,0 +1,61 @@
+*{
+    background-color: blanchedalmond;
+}
+body {
+    font-family: sans-serif;
+    margin: 20px;
+    padding: 0;
+    
+}
+
+/* Style for the heading */
+h2, h3 {
+    color: #333;
+    text-align: center;
+}
+
+/* Style for the main content */
+p {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+/* Style for the unordered list */
+ul {
+    margin-bottom: 10px;
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+/* Style for the ordered list */
+ol {
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+/* Style for tables */
+table {
+    width: 100%;
+    margin-bottom: 20px;
+    border-collapse: collapse;
+    border: 2px solid #333;
+}
+
+/* Style for table headers */
+th {
+    background-color: #f2f2f2;
+    border: 2px solid #333;
+    padding: 8px;
+    text-align: left;
+}
+
+/* Style for table cells */
+td {
+    border: 2px solid #333;
+    padding: 8px;
+}
+
+/* Alternate row background color */
+tr:nth-child(even) {
+    background-color: #ddd;
+}
