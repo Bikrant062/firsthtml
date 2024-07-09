@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>(DML)</title>
+    <link rel="stylesheet" href="assignment6style.css">
+</head>
+<body>
+    <h1>Data Manipulation Language (DML)</h1>
+    <p>Data Manipulation Language (DML) is a subset of SQL (Structured Query Language) used to manage and manipulate data within database objects such as tables. DML commands are essential for querying, inserting, updating, and deleting data stored in the database. These commands are the primary means of interacting with and managing the actual data.</p>
+    
+    <h2>Key DML Commands</h2>
+    
+    <h3>SELECT</h3>
+    <p>Used to retrieve data from one or more tables.</p>
+    <pre><code>
+-- Example:
+SELECT * FROM employees;
+    </code></pre>
+    
+    <h3>INSERT</h3>
+    <p>Used to add new rows of data to a table.</p>
+    <pre><code>
+-- Examples:
+INSERT INTO employees (employee_id, first_name, last_name, hire_date)
+VALUES (1, 'John', 'Doe', '2023-01-01');
+    </code></pre>
+    
+    <h3>UPDATE</h3>
+    <p>Used to modify existing data within a table.</p>
+    <pre><code>
+-- Example:
+UPDATE employees
+SET hire_date = '2024-01-01'
+WHERE employee_id = 1;
+    </code></pre>
+    
+    <h3>DELETE</h3>
+    <p>Used to remove rows of data from a table.</p>
+    <pre><code>
+-- Example:
+DELETE FROM employees
+WHERE employee_id = 1;
+    </code></pre>
+    
+    <h2>Characteristics of DML Commands</h2>
+    
+    <h3>Transactional</h3>
+    <p>DML commands can be rolled back or committed, allowing for greater control over data manipulation and consistency.</p>
+    
+    <h3>Data Handling</h3>
+    <p>These commands are used to insert, update, delete, and retrieve data, making them crucial for day-to-day database operations.</p>
+    
+    <h3>Conditional Operation</h3>
+    <p>DML commands often include WHERE clauses to specify conditions for data manipulation, providing precise control over which rows are affected.</p>
+    
+    <pre><code>
+-- Examples:
+-- Using a WHERE clause with SELECT:
+SELECT * FROM employees
+WHERE hire_date > '2023-01-01';
+
+-- Using a WHERE clause with UPDATE:
+UPDATE employees
+SET last_name = 'Smith'
+WHERE employee_id = 1;
+
+-- Using a WHERE clause with DELETE:
+DELETE FROM employees
+WHERE hire_date < '2023-01-01';
+    </code></pre>
+</body>
+</html>
