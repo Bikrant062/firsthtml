@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Relationships in DBMS</title>
+	<link rel="stylesheet" type="text/css" href="assignment8style.css">
+</head>
+<body>
+	<h1>Relationships in DBMS</h1>
+	<p>In database design, relationships define how data is connected or related between different tables. These relationships are crucial as they ensure data integrity and provide a structure for querying and manipulating data efficiently.</p>
+	
+	<div class="relationship">
+		<h2>One-to-One (1:1) Relationship:</h2>
+		<p>In a one-to-one relationship, one record in a table is related to exactly one record in another table. This relationship is less common in database design but is useful for dividing a table with many fields for clarity or security reasons.</p>
+		<p>Example: A table "Person" may have a one-to-one relationship with a table "ContactInfo," where each person has exactly one set of contact information.</p>
+	</div>
+	
+	<div class="relationship">
+		<h2>One-to-Many (1:N) Relationship:</h2>
+		<p>In a one-to-many relationship, one record in a table can be related to one or more records in another table. This is the most common type of relationship in relational databases.</p>
+		<p>Example: A table "Department" can have a one-to-many relationship with a table "Employee," where each department can have multiple employees, but each employee belongs to only one department.</p>
+	</div>
+	
+	<div class="relationship">
+		<h2>Many-to-One (M:1) Relationship:</h2>
+		<p>A many-to-one relationship is essentially the inverse of a one-to-many relationship. Many records in a table can be related to one record in another table.</p>
+		<p>Example: Multiple employees can belong to the same department, establishing a many-to-one relationship between the "Employee" table and the "Department" table.</p>
+	</div>
+	
+	<div class="relationship">
+		<h2>Many-to-Many (M:N) Relationship:</h2>
+		<p>In a many-to-many relationship, multiple records in one table can be related to multiple records in another table. To implement this in a relational database, a junction table (also known as an associative or intersection table) is used to connect the two tables.</p>
+		<p>Example: A table "Student" may have a many-to-many relationship with a table "Course." A junction table "Enrollment" would then connect students to courses, indicating which students are enrolled in which courses.</p>
+	</div>
+	
+</body>
+</html>
